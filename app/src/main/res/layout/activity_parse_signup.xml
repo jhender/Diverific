@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jhdev.lettuce.ParseSignup"
+    tools:ignore="MergeRootFrame"
+    style="@style/LoginFormContainer" >
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:maxLength="15" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Your email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etWhere"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Where do you want to dive"
+        android:inputType="text"
+        android:maxLength="10" />
+
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/etWhere"
+        android:layout_below="@id/etWhere"
+        android:layout_marginTop="25dp"
+        android:text="Go diving!" />
+
+</RelativeLayout>
